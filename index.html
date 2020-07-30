@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="MAE schedules cannabis delivery in the San Francisco East Bay, Oakland, Berkeley, Alameda, Emeryville, Albany, Walnut Creek, Orinda, Lafayette, Concord, Richmond, Hercules, San Leandro, Marin County">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Open+Sans:wght@300;400;600&family=Poiret+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+  <title>Mae.Delivery</title>
+</head>
+
+
+  <div class="flex-container">
+<img src="images/mainmae.png" alt="Mae Illustration" width="100%">
+<div class="logo">
+<img src="images/Maelogo.png" alt="Mae Logo"></div>
+      <h3>
+        Text Mae and We're <br>On The Way
+        </h3>
+      <h1>The Stuff is Here</h1>
+
+</div>
+
+<br><br>
+
+  </head>
+
+  <body>
+
+
+  <div class="intro">
+Cannabis | Edibles<br>Vapes | Topicals</div>
+<br><br>
+<div class="container">
+    <center> <button><a href="sms:+15107269049">TEXT NOW</a></button></center>
+</div></div>
+
+    <div class="menucontainer">
+      <h2>MENU</h2>
+      <ul id="menu-products"></ul>
+
+<script>
+  (function(){
+    fetch('https://cgd-mgmt-staging.windmountain.software/menu.json')
+      .then(response => response.json())
+      .then(function(data) {
+        data.products.forEach(function(product) {
+          const item = document.createElement("li");
+          const name = document.createElement("span");
+          const price = document.createElement("span");
+          name.innerHTML = product.name;
+          price.innerHTML = product.price;
+          item.appendChild(name);
+          item.appendChild(price);
+          document.getElementById('menu-products').appendChild(item);
+        });
+      });
+  })();
+</script>
+    </div>
+</div>
+
+<div class="grid">
+  <div class="grid1">
+ <h4>What our customers say</h4>
+  <p>“Amazing product, amazing driver, amazing service!!“ <br>- Charmaine<br><br>“Love ordering from these guys. They’re awesome“ <br>-Brayan <br><br>“They were fast asf, and accurate“ <br>-Anonymous</p>
+
+
+  <h4>SERVICE AREA (BAY AREA)</h4>
+  <p>Alameda County ($50 minimum)<br>
+Contra Costa County ($50 minimum)<br>
+Solano County ($80 minimum)<br>
+Marin County ($80 minimum)
+<h4>NO DELIVERY FEES</h4>
+<br><br>
+<h4>HOURS OF OPERATION</h4>
+  <p>Tuesday : Scheduled Only<br>
+Wednesday : Scheduled Only<br>
+Thursday : 12pm - 8pm<br>
+Friday : 12pm - 8pm<br>
+Saturday 12pm - 8pm<br>
+Sunday : 12pm - 8pm<br>
+Monday : CLOSED</p>
+<div class="container">
+  <div class="button2">
+  <center> <button><a href="sms:+15107269049">TEXT NOW</a></button></center>
+</div></div>
+  <h4>BLACK OWNED. VETERAN OWNED.</h4></div>
+<div class="grid2">
+    <img src="images/left.png" alt="Mae Illustration" width="100%"></div>
+</body>
+</div>
+  <center><footer>
+    Community Gardens Inc.
+  C9-0000196-LIC <br><br>
+  © Teapad 2020
+</footer></center>
+
+
+
+</html>
