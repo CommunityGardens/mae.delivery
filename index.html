@@ -28,23 +28,38 @@
   <title>Mae.Delivery</title>
 </head>
 
+    <body>
+<center>    <div class="age-gate">
+              <p>
+                Welcome!<br>
+      Due to regulations, you must be 21 years or older to view this site. Please confirm your age.
+              </p>
+              <button id="21-yes">Over 21</button><br>
+              <button id="21-no">Under 21</button>
+            </div></center>
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('21-yes').addEventListener("click", function() {
+          document.body.classList.add('is21');
+        });
+        document.getElementById('21-no').addEventListener("click", function() {
+      		window.location.href = "google.com";
+        });
+      });
+      </script>
 
   <div class="flex-container">
-<img src="images/mainmae.png" alt="Mae Illustration" width="100%">
+<img src="images/mainmae.png" alt="Mae Illustration">
 <div class="logo">
 <img src="images/Maelogo.png" alt="Mae Logo"></div>
       <h3>
         Text Mae and We're <br>On The Way
         </h3>
       <h1>The Stuff is Here</h1>
-
 </div>
 
 <br><br>
-
-
-  <body>
-
 
   <div class="intro">
 Cannabis | Edibles<br>Vapes | Topicals</div>
@@ -52,6 +67,8 @@ Cannabis | Edibles<br>Vapes | Topicals</div>
 <div class="container">
     <center> <button><a href="sms:+15107269049">TEXT NOW</a></button></center>
 </div></div>
+
+
 
     <div class="menucontainer">
       <h2>MENU</h2>

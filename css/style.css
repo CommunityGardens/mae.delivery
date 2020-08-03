@@ -12,6 +12,31 @@ body {
 background-color: #FFF0E6;
 }
 
+.age-gate {
+  position: fixed;
+  height: 50%;
+  width: 100%;
+  background: #FFE3D4;
+  opacity: 1.0;
+  margin: auto;
+}
+
+.age-gate button {
+  display: block;
+}
+
+
+.age-gate p {
+  text-align: center;
+  margin-left: auto;
+      margin-top: 50px;
+          margin-bottom: 50px;
+          font-size: 20px;
+}
+
+body.is21 .age-gate {
+  display: none;
+}
 
 h1 {
 font-family: 'Limelight', cursive;
@@ -25,8 +50,6 @@ left: 25px;
 img{
   width:100%;
 }
-
-
 
 h3 {
   font-family: 'Poiret One', cursive;
@@ -54,16 +77,6 @@ left: 25px;
   height: 200px;
   position: relative;
    margin-bottom: -60px;
-}
-
-
-.center {
-    margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 button {
@@ -105,11 +118,23 @@ button a{
 
 #menu-products {
   line-height: 22px;
-  text-align: center;
   color: #603813;
     font-family: 'Open Sans', sans-serif;
         font-size: 14px;
+        text-align: left;
 }
+
+#menu-products li span:first-of-type {
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+      #menu-products li span:last-of-type {
+float: right;
+margin-right: 80px;
+
+      }
+
 
  ul {
     list-style-type: none;
@@ -130,7 +155,6 @@ p {
     font-weight: 400;
     font-size: 14px;
     text-align: center;
-
 }
 
 
@@ -148,6 +172,35 @@ footer {
 
 /*desktop*/
 @media only screen and (min-width: 768px) {
+
+  .age-gate {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #FFE3D4;
+    opacity: 1.0;
+    margin: auto;
+  }
+
+  .age-gate button {
+    display: block;
+  }
+
+
+  .age-gate p {
+    text-align: center;
+    margin-left: auto;
+        margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 20px;
+  }
+
+  body.is21 .age-gate {
+    display: none;
+  }
+
+
+
 
 
 img {
@@ -192,7 +245,7 @@ p {
 }
 
 .menucontainer {
-  width: 40%;
+  width: 60%;
 position: relative;
 border: 2px dotted #E96720;
  border-radius: 10px;
@@ -242,6 +295,7 @@ background-color: #FFE3D4;
 .button2 {
   display: none;
 }
+
 
 }
 
