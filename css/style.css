@@ -51,6 +51,7 @@ img{
   width:100%;
 }
 
+
 h3 {
   font-family: 'Poiret One', cursive;
   color: #603813;
@@ -171,7 +172,7 @@ footer {
 
 
 /*desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
   .age-gate {
     position: fixed;
