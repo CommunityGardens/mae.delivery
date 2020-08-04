@@ -23,9 +23,8 @@ body.is21 {
   position: fixed;
   height: 100%;
   width: 100%;
-  background: #FFE3D4;
-  opacity: 1.0;
-  margin: auto;
+  background: #FFF0E6;
+  opacity: .9;
   z-index: 2;
 }
 
@@ -37,8 +36,10 @@ body.is21 {
 .age-gate p {
   text-align: center;
   margin-left: auto;
-      margin-top: 50px;
+      margin-top: 200px;
           margin-bottom: 50px;
+          margin-left: 25px;
+          margin-right: 25px;
           font-size: 20px;
 }
 
@@ -99,7 +100,8 @@ button {
  font-size: 18px;
  cursor: pointer;
  border-radius: 10px;
- font-family: 'Poiret One', cursive;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 }
 
 button a{
@@ -159,6 +161,15 @@ margin-right: 80px;
         margin: auto;
  }
 
+ h5 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+     color: #E96720;
+      text-align: center;
+        margin: auto;
+ }
+
 p {
     color: #603813;
     font-family: 'Open Sans', sans-serif;
@@ -183,13 +194,17 @@ footer {
 /*desktop*/
 @media only screen and (min-width: 1024px) {
 
+  body.is21 {
+    overflow: auto;
+  }
+
   .age-gate {
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #FFE3D4;
-    opacity: 1.0;
-    margin: auto;
+    background: #FFF0E6;
+    opacity: .9;
+    z-index: 2;
   }
 
   .age-gate button {
@@ -200,8 +215,10 @@ footer {
   .age-gate p {
     text-align: center;
     margin-left: auto;
-        margin-top: 50px;
+        margin-top: 300px;
             margin-bottom: 50px;
+            margin-left: 25px;
+            margin-right: 25px;
             font-size: 20px;
   }
 
@@ -244,6 +261,16 @@ h4 {
   margin-left: 55px;
   text-align: left;
 }
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+    color: #E96720;
+     text-align: left;
+       margin-left: 55px;
+
+}
+
 
 p {
    color: #603813;
